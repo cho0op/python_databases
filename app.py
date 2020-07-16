@@ -1,4 +1,4 @@
-from database import get_entries, add_entry
+from database import get_entries, add_entry, create_table
 
 menu = """Select section:
 1) Add new entry
@@ -18,6 +18,7 @@ def show_entries(entries):
     for entry in entries:
         print("entry: {0}\ndata:{1}\n\n".format(entry['content'], entry['date']))
 
+create_table()
 
 while (user_input := input(menu)) != "3":  # new python3.8 feature :=
     if user_input == "1":
