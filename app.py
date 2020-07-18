@@ -15,8 +15,9 @@ def add_entry_to_database():
 
 
 def show_entries(entries):
+    print(entries)
     for entry in entries:
-        print("entry: {0}\ndata:{1}\n\n".format(entry['content'], entry['date']))
+        print("entry: {0}\ndata: {1}\n\n".format(entry['content'], entry['date']))
 
 create_table()
 
